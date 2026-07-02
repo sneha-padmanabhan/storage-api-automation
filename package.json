@@ -1,0 +1,22 @@
+{
+  "name": "fakestoreapi-cart-tests",
+  "version": "1.0.0",
+  "description": "API test suite for FakeStoreAPI Cart CRUD — positive, negative, auth, schema validation, data-driven, and a contract test (Playwright + Ajv)",
+  "scripts": {
+    "test": "playwright test",
+    "test:positive": "playwright test --grep @positive",
+    "test:negative": "playwright test --grep @negative",
+    "test:auth": "playwright test --grep @auth",
+    "test:schema": "playwright test --grep @schema",
+    "test:contract": "playwright test --grep @contract",
+    "test:datadriven": "playwright test --grep @datadriven",
+    "report": "playwright show-report",
+    "snapshot:cart": "node scripts/snapshot-cart.js"
+  },
+  "keywords": ["playwright", "api-testing", "ajv", "json-schema", "fakestoreapi", "contract-testing"],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "ajv": "^8.17.1"
+  }
+}

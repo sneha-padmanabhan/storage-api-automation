@@ -4,7 +4,7 @@ API test suite for the **Cart** resource of [FakeStoreAPI](https://fakestoreapi.
 
 > **FakeStoreAPI simulates writes.** POST/PUT/DELETE return a realistic response with a fake `id` but **do not persist**. So these tests assert on each operation's *response*, not on read-after-write — a deliberate design choice for this target, not a gap.
 
-## Framework choice — why Playwright Test
+## Framework choosen — why Playwright Test
 
 `@playwright/test` in **API mode** (the built-in `request` fixture), with **Ajv** for JSON Schema.
 
